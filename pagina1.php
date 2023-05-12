@@ -7,9 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
 
-         echo "<p>Boa tarde à todos!</p>"
+    <?php
+        //Declaração de variável
+        $hora = date("H");
+
+        if($hora < 12){
+            echo "<p> " .$hora. "hs. Bom dia! </p>";
+
+        } else if ($hora < 18){
+            echo "<p> " .$hora. "hs. Boa tarde! </p>";
+
+        } else {
+            echo "<p> " .$hora. "hs. Boa noite! </p>";
+        }
+ 
     ?>
 </body>
 </html>
